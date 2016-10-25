@@ -1,0 +1,16 @@
+#Build Files
+build/
+out/
+bin/
+obj/
+
+#IntelliJ Files
+*.iml
+.idea/
+
+#Vim swp files
+*.swp
+*.swo
+
+#OSX Files
+.DS_Store
