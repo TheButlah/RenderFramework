@@ -49,7 +49,7 @@ void Camera::changeRotationBy(float rx, float ry, float rz) {
 }
 
 float Camera::getX() {
-  return this->x;
+  return x;
 }
 
 float Camera::getY() {
@@ -61,13 +61,13 @@ float Camera::getZ() {
 }
 
 float Camera::getRX() {
-  return x;
+  return rx;
 }
 
 float Camera::getRY() {
-  return y;
+  return ry;
 }
 
 float Camera::getRZ() {
-  return z;
+  return rz;
 }
