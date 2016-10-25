@@ -30,7 +30,14 @@ include_directories(include)
 #Add glm include directory
 include_directories(external/glm)
 
-set(SOURCE_FILES main.cpp Renderer.cpp Camera.cpp Shader.cpp ShaderProgram.cpp)
+set(SOURCE_FILES
+    main.cpp
+    Renderer.cpp
+    Camera.cpp
+    Shader.cpp
+    ShaderProgram.cpp
+    PointCloud.cpp)
+
 add_executable(RenderFramework ${SOURCE_FILES})
 
 target_link_libraries(RenderFramework glew glfw)
