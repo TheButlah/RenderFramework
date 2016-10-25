@@ -6,9 +6,9 @@ class Camera {
   public:
     /**
      * Creates a new Camera.
-     * @param x X location in world coordinates
-     * @param y Y location in world coordinates
-     * @param z Z location in world coordinates
+     * @param x  X location in world coordinates
+     * @param y  Y location in world coordinates
+     * @param z  Z location in world coordinates
      * @param rx Degrees "up" to look
      * @param ry Degrees "right" to look
      * @param rz Degrees clockwise to rotate head

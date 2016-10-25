@@ -1,8 +1,8 @@
 #include "Camera.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 
-Camera::Camera(float x, float y, float z, float rx, float ry, float rz) :
-  x(x), y(y), z(z), rx(rx), ry(ry), rz(rz), matrixNeedsUpdating(true) {
+Camera::Camera(float x, float y, float z, float rx, float ry, float rz)
+  : x(x), y(y), z(z), rx(rx), ry(ry), rz(rz), matrixNeedsUpdating(true) {
   updateMatrix();
 }
 
