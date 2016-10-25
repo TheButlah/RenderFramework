@@ -16,7 +16,7 @@ class Camera {
      */
     Camera(float x, float y, float z, float rx, float ry, float rz);
 
-    ~Camera();
+    ~Camera() = default;
 
     /**
      * Gets the view matrix representing all the necessary transforms required

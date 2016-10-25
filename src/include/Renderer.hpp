@@ -1,10 +1,11 @@
 #pragma once
 
 #include <memory>
+#include <string>
 
 class Renderer {
   public:
-    Renderer();
+    Renderer(int width, int height, std::string title);
     ~Renderer();
   private:
     class Impl;

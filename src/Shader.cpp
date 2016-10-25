@@ -1,7 +1,7 @@
 #include "Shader.hpp"
 #include <GL/glew.h>
-#include <array>
 #include <iostream>
+#include <vector>
 
 using std::cerr;
 using std::endl;
@@ -17,7 +17,7 @@ Shader::Shader(int type, std::string shaderCode)
   if (success != GL_TRUE) {
     GLint logSize = 0;
     glGetShaderiv(shaderID, GL_INFO_LOG_LENGTH, &logSize);
-    std::array<GLchar, logSize> errorLog;
+    std::vector<GLchar> errorLog(logSize);
     glGetShaderInfoLog(shaderID, logSize, nullptr, &errorLog[0]);
     glDeleteShader(shaderID);
     cerr << "Error: shader failed to compile!" << endl;

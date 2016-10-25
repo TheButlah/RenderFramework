@@ -2,7 +2,7 @@
 
 #include <GL/glew.h>
 #include <iostream>
-#include <array>
+#include <vector>
 
 using std::cerr;
 using std::endl;
@@ -24,7 +24,7 @@ ShaderProgram::ShaderProgram(std::vector<Shader> shaders)
   if (linkStatus != GL_TRUE) {
     GLint logSize = 0;
     glGetProgramiv(programID,GL_INFO_LOG_LENGTH,&logSize);
-    std::array<GLchar,logSize> infoLog;
+    std::vector<GLchar> infoLog(logSize);
     glGetProgramInfoLog(programID, logSize, nullptr, &infoLog[0]);
 
     //We don't need the program anymore
